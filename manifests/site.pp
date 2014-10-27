@@ -85,7 +85,8 @@ node default {
   postgresql::db { 'mydb': }
 
   include hipchat
-  
+  include iterm2::stable
+
   # we provide some defaults you can include
   include sysctl::ipforwarding
 
