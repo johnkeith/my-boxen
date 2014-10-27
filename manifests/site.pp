@@ -87,6 +87,11 @@ node default {
   include hipchat
   include iterm2::stable
 
+  include sublime_text
+  sublime_text::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
+
   # we provide some defaults you can include
   include sysctl::ipforwarding
 
