@@ -79,11 +79,12 @@ node default {
   include java
   include elasticsearch
   # install postgres and run the service
-  include postgresql
+  include postgresql]
 
   # do the above automatically, and create a db
   postgresql::db { 'mydb': }
 
+  include hipchat
   
   # we provide some defaults you can include
   include sysctl::ipforwarding
